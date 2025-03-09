@@ -1,0 +1,24 @@
+{
+  "name": "worldtimeapi",
+  "version": "1.0.0",
+  "description": "A clone of worldtimeapi.org.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owenrgu/worldtimeapi.git"
+  },
+  "author": "Owen Meade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/owenrgu/worldtimeapi/issues"
+  },
+  "homepage": "https://github.com/owenrgu/worldtimeapi#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "moment-timezone": "^0.5.47"
+  }
+}
