@@ -9,7 +9,7 @@ const PORT = 1337;
 
 // Routes
 // get time by timezone in a given location (e.g. "/America/New_York")
-app.get("/:area/:location", (req, res) => {
+app.get("/api/timezone/:area/:location", (req, res) => {
     try {
         // check if timezone is valid
         const timezone = `${req.params.area}/${req.params.location}`;
@@ -49,7 +49,7 @@ app.get("/:area/:location", (req, res) => {
 });
 
 // simplified route for area timezones if known (e.g. "UTC")
-app.get("/:area", (req, res) => {
+app.get("/api/timezone/:area", (req, res) => {
     try {
         // check if timezone is valid
         const timezone = req.params.area;
@@ -88,7 +88,7 @@ app.get("/:area", (req, res) => {
 });
 
 // get a list of all the supported timezones
-app.get("/", (req, res) => {
+app.get("/api/timezone", (req, res) => {
     return res.status(200).json(moment.tz.names());
 });
 
