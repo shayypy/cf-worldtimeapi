@@ -83,6 +83,10 @@ This application can be deployed to any Node.js hosting platform: DigitalOcean, 
 
 > DigitalOcean is offering $200 of free credit using my referral link [here](https://m.do.co/c/28c7e001c3e8). If you're looking to play around with web hosting, this is a great opportunity for you! DigitalOcean's [App Platform](https://docs.digitalocean.com/products/app-platform/) is a no-code solution to hosting this repository. You can even link the repository to automatically deploy any changes to this repository to your own app in real time!
 
+## License
+
+This repository uses the MIT License, meaning you are free to copy the code and repurpose it for whatever you want.
+
 ## Contributing
 
 If you would like to contribute to this repository, please open a Pull Request.
