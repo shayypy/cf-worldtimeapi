@@ -1,24 +1,29 @@
 {
-  "name": "worldtimeapi",
+  "name": "cf-worldtimeapi",
   "version": "1.0.0",
-  "description": "A clone of worldtimeapi.org.",
-  "main": "app.js",
+  "description": "A clone of worldtimeapi.org, migrated to Cloudflare Workers.",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/owenrgu/worldtimeapi.git"
+    "url": "git+https://github.com/shayypy/cf-worldtimeapi.git"
   },
   "author": "Owen Meade",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/owenrgu/worldtimeapi/issues"
+    "url": "https://github.com/shayypy/cf-worldtimeapi/issues"
   },
-  "homepage": "https://github.com/owenrgu/worldtimeapi#readme",
+  "homepage": "https://github.com/shayypy/cf-worldtimeapi#readme",
   "dependencies": {
-    "express": "^4.21.2",
-    "moment-timezone": "^0.5.47"
+    "hono": "^4.7.9",
+    "moment-timezone": "^0.5.47",
+    "wrangler": "^4.15.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
   }
 }
